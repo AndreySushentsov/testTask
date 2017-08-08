@@ -1,0 +1,35 @@
+.footer--line{
+  margin: 0 auto;
+  margin-top: 45px;
+  height: 7px;
+  background-image: url('../img/wave.png');
+  background-repeat: repeat-x;
+  width: 92%;
+}
+.footer{
+  position: relative;
+  padding-bottom: 50px;
+  padding-left:300px;
+}
+.footer--list{
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.footer--item{
+  display: inline-block;
+  margin-right: 23px;
+}
+.footer--link{
+  color: #000;
+}
+.footer--copyright{
+  margin-bottom: 6px;
+}
+.footer--logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-top: -10px;
+}

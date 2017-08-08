@@ -1,0 +1,19 @@
+.content--brands{
+  display: none;
+  position: absolute;
+  background:#fff;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 4px;
+}
+.content--brands_list{
+  width: 130px;
+}
+.content--brands_item{
+  margin: 9px 0;
+}
+.content--brands_link{
+  color: $link_color2;
+}

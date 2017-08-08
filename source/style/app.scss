@@ -1,0 +1,40 @@
+// переменные
+$bg_color: #f3f3f3; // цвет фона
+$link_color: #006f98; //цвет ссылок
+$link_color2: #ff8315; // цвет ссылок
+
+// GENERAL
+body,h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  min-height: 100vh;
+  background-color: $bg_color;
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+}
+li{
+  list-style-type: none;
+}
+
+.container{
+  width: 1040px;
+  margin: 0 auto;
+  //font-size:13px;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+// Подключаем примеси и остальные стили
+@import 'mixins/mixins';
+@import 'common/_navigation';
+@import 'common/_header';
+@import 'common/_sidebar';
+@import 'common/_content';
+@import 'common/footer';

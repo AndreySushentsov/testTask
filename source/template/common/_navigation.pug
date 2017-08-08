@@ -1,0 +1,6 @@
+.content--navigation
+  ul.content--navigation_list
+    -var pages = ['Услуги компании',"Доставка","Оплата","Полезные статьи", "Контакты"]
+    each page in pages
+      li.content--navigation_item
+        a(href='#').content--navigation_link=page

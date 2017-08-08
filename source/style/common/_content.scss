@@ -1,0 +1,13 @@
+.content{
+  margin-top: 8px;
+  width: 720px;
+}
+@import './_navigation';
+@import './section.search';
+@import './section.breadcrumbs';
+@import './section.filter';
+@import './section.goods';
+@import './section.pagination';
+@import './section.text';
+@import './colors';
+@import './brands';

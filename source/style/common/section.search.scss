@@ -1,0 +1,49 @@
+.content--search{
+  height: 70px;
+  background: #fbeea9;
+  padding: 22px;
+}
+.content--input_container{
+  float: left;
+  margin-right: 28px;
+  position: relative;
+}
+.content--input_field{
+  width: 500px;
+  padding: 13px 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 10px #b1afaf;
+  color: #c9c8c8;
+  font-size: 15px;
+  font-style: italic;
+}
+.content--input_button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5px;
+  margin-top: 7px;
+  padding: 7px 17px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(0deg, #ff5e0f, #ffc825);
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.content--athorisation_link{
+  display: block;
+  color: #000;
+  font-size: 12px;
+  font-style: italic;
+  padding-top: 7px;
+}
+.content--span{
+  display: block;
+  clear: left;
+  margin-top: 17px;
+}

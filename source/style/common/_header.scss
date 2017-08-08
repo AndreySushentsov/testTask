@@ -1,0 +1,42 @@
+header{
+  padding-top: 23px;
+  display: flex;
+  flex-direction: row;
+}
+.header--logo{
+  margin-left: 40px;
+}
+.header--phones, .header--working_time{
+  padding: 6px;
+  margin-left:23px;
+}
+.header--phones_number{
+  font-size: 19px;
+}
+.header--working_callback{
+  display: block;
+  color: $link_color;
+  margin-top: 5px;
+  text-decoration: none;
+  border-bottom: 1px dashed $link_color;
+}
+.header--card{
+  padding: 6px;
+  margin-left: 63px;
+}
+.header--card_img{
+  float: left;
+  margin-bottom: 20px;
+  margin-right:  14px;
+}
+.header--busket_container{
+  width: 170px;
+}
+.header--card_link{
+  color: $link_color2;
+  font-weight: bold;
+}
+.header--card_span{
+  font-size: 12px;
+  margin-top: 7px;
+}

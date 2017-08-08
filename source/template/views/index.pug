@@ -1,0 +1,27 @@
+include ../common/_template.pug
+
+body
+  .container
+    header
+      include ../common/header.pug
+    main
+      .sidebar
+        include ../common/sidebar.pug
+      .content
+        include ../common/_navigation.pug
+        include ../common/section.search.pug      
+        include ../common/section.breadcrumbs.pug
+        include ../common/section.filter.pug
+        include ../common/section.goods.pug
+        include ../common/section.pagination.pug
+        include ../common/section.text.pug
+        include ../common/colors.pug
+        include ../common/brands.pug
+    footer
+      include ../common/_footer.pug
+  script(src='./assets/js/app.js' defer)
+  <!--[if lt IE 9]>
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+  <![endif]-->
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+  script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous")

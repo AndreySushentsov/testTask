@@ -1,0 +1,14 @@
+.content--breadcrumbs{
+  background: #fff;
+  padding: 15px 0;
+  padding-left: 24px;
+}
+.content--breadcrumbs_link{
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+}
+.content--breadcrumbs_link.active{
+  text-decoration: none;
+  margin-left: 4px;
+}

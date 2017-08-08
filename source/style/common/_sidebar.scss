@@ -1,0 +1,104 @@
+.sidebar{
+  width: 240px;
+  margin-top: 25px;
+  margin-left: 38px;
+  border-top-left-radius: 7px;
+
+}
+.sidebar--container{
+  background-color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: -1px 1px 2px #aeaeae;
+}
+.sidebar--inner_shadow{
+  padding-top: 6px;
+  padding-bottom: 5px;
+  box-shadow: inset  -10px 0px 10px #DBE3E4;
+}
+.sidebar--header{
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+.sidebar--header_img{
+  float: left;
+  margin-right:10px;
+}
+.sidebar--menu{
+  border-top: 5px solid #ffd8b6;
+  padding-top: 5px;
+}
+.sidebar--menu_link{
+  display: block;
+  color: $link_color;
+  padding-left: 23px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: 0.2s;
+  &:hover{
+    background: #eff4f5;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+// see ealier
+.sidebar--looked{
+  margin-top: 44px;
+  padding: 0 23px;
+}
+.sidebar--looked_list{
+  margin-top: 13px;
+}
+.sidebar--looked_item{
+  //border: 1px solid #000;
+  height: 62px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.sidebar--looked_img_container{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 9px;
+  box-shadow: 0 10px 35px -15px #000;
+}
+.sidebar--looked_img{
+  width: 100%;
+}
+.sidebar--looked_title_link{
+  color: $link_color;
+  position: absolute;
+}
+.sidebar--looked_price{
+  position: absolute;
+  display: block;
+  margin-top: 27px;
+  margin-left: 60px;
+}
+.sidebar--looked_link{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $link_color2;
+  text-decoration: none;
+  border-bottom: 1px dashed $link_color2;
+  margin-right: 21px;
+}
+.sidebar--social{
+  margin-top: 70px;
+  padding-left:23px;
+}
+.sidebar--social_list{
+  margin-top: 10px;
+  margin-left: -14px;
+}
+.sidebar--social_item{
+  display: inline-block;
+  margin-right: 3px;
+}
+.sidebar--social_link{
+  width: 50px;
+  height: 50px;
+}

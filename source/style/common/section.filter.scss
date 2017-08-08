@@ -1,0 +1,67 @@
+.content--filter{
+  background: #fbf8e8;
+  padding: 32px;
+  padding-top: 26px;
+  padding-bottom: 0;
+}
+
+// price filter
+.content--filter_item_conteiner{
+  position: relative;
+}
+.content--filter_item_descr{
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  margin-left: 50px;
+}
+// end price filter
+.content--filter_item_input{
+  width: 70px;
+  height: 25px;
+  border: none;
+  box-shadow: inset 0px 0px 10px #C3C3C2;
+  border-radius: 2px;
+}
+.content--filter_item_size{
+  margin-left: 90px;
+  margin-top: -5px;
+}
+.content--filter_list{
+  margin-top: 20px;
+}
+.content--filter_item{
+  display: inline-block;
+  width: 48%;
+  padding: 14px 0;
+}
+.content--filter_item_title{
+  float: left;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+.content--filter_item_link{
+  color: $link_color2;
+  text-decoration: none;
+  border-bottom: 1px dashed $link_color2;
+}
+.content--filter_button_section{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-top: 4px solid #fff;
+  background: #fbf5d3;
+  padding: 10px 25px;
+  box-shadow: 0 20px 30px -15px #c3c3c3;
+}
+.content--input_button-filter_button{
+  position: relative;
+  margin-right: 15px;
+}
+.content--filter_item_link-remove{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 28px;
+  margin-top: 25px;
+}
