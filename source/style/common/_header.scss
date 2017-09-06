@@ -1,7 +1,16 @@
-header{
-  padding-top: 23px;
-  display: flex;
-  flex-direction: row;
+
+.header--container{
+  padding-top: 10px;
+  height: 73px;
+  //display: inline-block;
+  //display: flex;
+  //flex-direction: row;
+  //width: 100%;
+  //@include clearfix;
+  position: relative;
+}
+.header--phones, .header--working_time, .header--card{
+  display: inline-block;
 }
 .header--logo{
   margin-left: 40px;
@@ -19,10 +28,18 @@ header{
   margin-top: 5px;
   text-decoration: none;
   border-bottom: 1px dashed $link_color;
+  transition: 0.2s;
+  &:hover{
+    color:$link_color2;
+    border-bottom: 1px dashed $link_color2;
+  }
 }
 .header--card{
   padding: 6px;
-  margin-left: 63px;
+  margin-left: 61px;
+  margin-bottom: -10px;
+  position: absolute;
+  top: 20px;
 }
 .header--card_img{
   float: left;
@@ -30,11 +47,15 @@ header{
   margin-right:  14px;
 }
 .header--busket_container{
-  width: 170px;
+  width: 150px;
 }
 .header--card_link{
   color: $link_color2;
   font-weight: bold;
+  transition: 0.2s;
+  &:hover{
+    color:$link_color;
+  }
 }
 .header--card_span{
   font-size: 12px;

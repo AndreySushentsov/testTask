@@ -22,6 +22,9 @@
 }
 .footer--link{
   color: #000;
+  &:hover{
+    color: $link_color2;
+  }
 }
 .footer--copyright{
   margin-bottom: 6px;

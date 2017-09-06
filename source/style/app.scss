@@ -7,7 +7,6 @@ $link_color2: #ff8315; // цвет ссылок
 body,h1,h2,h3,h4,h5,h6,p,ul,li {
   margin: 0;
   padding: 0;
-
 }
 body{
   min-height: 100vh;
@@ -18,17 +17,20 @@ body{
 li{
   list-style-type: none;
 }
-
+.ruble{
+  font-family: 'ALSRubl-Arial', Arial, sans-serif;
+  line-height: normal;
+  font-weight: 100;
+  font-size: 14px;
+}
 .container{
   width: 1040px;
   margin: 0 auto;
   //font-size:13px;
 }
 
-main{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+a{
+  transition: 0.2s;
 }
 
 // Подключаем примеси и остальные стили

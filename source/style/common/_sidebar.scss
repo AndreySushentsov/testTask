@@ -3,13 +3,15 @@
   margin-top: 25px;
   margin-left: 38px;
   border-top-left-radius: 7px;
+  display: inline-block;
 
 }
 .sidebar--container{
   background-color: #fff;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  box-shadow: -1px 1px 2px #aeaeae;
+  box-shadow: 3px 1px 1px 2px #aeaeae;
+  behavior:url('/assets/js/PIE.htc');
 }
 .sidebar--inner_shadow{
   padding-top: 6px;
@@ -53,38 +55,53 @@
 }
 .sidebar--looked_item{
   //border: 1px solid #000;
-  height: 62px;
+  min-height: 62px;
   position: relative;
   margin-bottom: 30px;
 }
 .sidebar--looked_img_container{
   width: 50px;
-  height: 50px;
+  height: 70px;
   float: left;
   margin-right: 9px;
-  box-shadow: 0 10px 35px -15px #000;
+
 }
 .sidebar--looked_img{
   width: 100%;
+  box-shadow: 0 10px 35px -15px #000;
+  behavior:url('/assets/js/PIE.htc');
+  zoom:1;
 }
 .sidebar--looked_title_link{
   color: $link_color;
-  position: absolute;
+  max-height: 30px;
+  display: block;
+  overflow: hidden;
+  
+  //position: absolute;
+  &:hover{
+    color: $link_color2;
+  }
 }
 .sidebar--looked_price{
-  position: absolute;
+  //position: absolute;
   display: block;
-  margin-top: 27px;
+  //margin-top: 27px;
   margin-left: 60px;
+  margin-top: 10px;
 }
 .sidebar--looked_link{
-  position: absolute;
+  //position: absolute;
   bottom: 0;
   right: 0;
   color: $link_color2;
   text-decoration: none;
   border-bottom: 1px dashed $link_color2;
   margin-right: 21px;
+  &:hover{
+    color: $link_color;
+    border-bottom: 1px dashed $link_color;
+  }
 }
 .sidebar--social{
   margin-top: 70px;

@@ -11,12 +11,15 @@
 .content--input_field{
   width: 500px;
   padding: 13px 10px;
+  position: relative;
   border: none;
   border-radius: 3px;
   box-shadow: inset 1px 1px 10px #b1afaf;
   color: #c9c8c8;
   font-size: 15px;
   font-style: italic;
+  behavior: url('/assets/js/PIE.htc');
+  zoom:1;
 }
 .content--input_button{
   position: absolute;
@@ -29,7 +32,10 @@
   font-weight: bold;
   border: none;
   border-radius: 2px;
+  -pie-background:linear-gradient(90deg, #ff5e0f, #ffc825);
   background: linear-gradient(0deg, #ff5e0f, #ffc825);
+  behavior: url('/assets/js/PIE.htc');
+  zoom:1;
   &:hover{
     cursor: pointer;
   }
@@ -41,6 +47,9 @@
   font-size: 12px;
   font-style: italic;
   padding-top: 7px;
+  &:hover{
+    color: $link_color2;
+  }
 }
 .content--span{
   display: block;

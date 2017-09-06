@@ -2,7 +2,7 @@
   margin-top: -12px;
 }
 .content--pagination_list{
-  margin-left: 345px;
+  margin-left: 47.4%;
 }
 .content--pagination_item{
   display: inline-block;
@@ -15,6 +15,9 @@
   height: 100%;
   width: 20px;
   color: $link_color;
+  &:hover{
+    background: rgba(255,255,255,0.5);
+  }
 }
 .content--pagination_link.active{
   background: #fff;

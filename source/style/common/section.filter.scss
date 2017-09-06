@@ -1,10 +1,42 @@
 .content--filter{
   background: #fbf8e8;
-  padding: 32px;
   padding-top: 26px;
   padding-bottom: 0;
 }
+.content--filter_title{
+  padding-left: 30px;
+}
+.content--filter_item_input_wrapper{
+  position: relative;
+  padding-top:30px;
+  margin-top: -15px;
+  margin-left:10px;
+}
+.content--fliter_price_container1,.content--fliter_price_container2{
+  display: inline-block;
+  position: absolute;
+  top:-23px;
+  width: 45px;
+  outline:0;
+  padding: 0;
+  margin:0;
+  margin-left: -15px;
+}
+.content--fliter_price_container1{
+  margin-left: -20px;
+}
+.content--filter_item_val_container1, .content--filter_item_val_container2{
+  width: 27px;
+  height: 20px;
+  //display: inline-block;
+  border: none;
+  background:#fbf8e8;
+  text-align: right;
+}
 
+.content--filter_item_val_container2{
+  right: 0;
+}
 // price filter
 .content--filter_item_conteiner{
   position: relative;
@@ -12,7 +44,7 @@
 .content--filter_item_descr{
   position: absolute;
   height: 40px;
-  width: 200px;
+  width: 256px;
   margin-left: 50px;
 }
 // end price filter
@@ -22,6 +54,15 @@
   border: none;
   box-shadow: inset 0px 0px 10px #C3C3C2;
   border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 5px;
+  behavior:url('/assets/js/PIE.htc');
+  zoome:1;
+  position: relative;
+}
+.content--filter_item_span{
+  width: 50px;
+  margin: 0 10px;
 }
 .content--filter_item_size{
   margin-left: 90px;
@@ -29,11 +70,17 @@
 }
 .content--filter_list{
   margin-top: 20px;
+  font-size: 0;
 }
 .content--filter_item{
   display: inline-block;
-  width: 48%;
+  width: 50%;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 12px;
   padding: 14px 0;
+  padding-left:23px;
 }
 .content--filter_item_title{
   float: left;
@@ -44,10 +91,12 @@
   color: $link_color2;
   text-decoration: none;
   border-bottom: 1px dashed $link_color2;
+  &:hover{
+    color:$bg_color;
+    border-bottom: 1px dashed $bg_color;
+  }
 }
 .content--filter_button_section{
-  display: flex;
-  flex-direction: row;
   position: relative;
   border-top: 4px solid #fff;
   background: #fbf5d3;
@@ -57,6 +106,9 @@
 .content--input_button-filter_button{
   position: relative;
   margin-right: 15px;
+}
+.content--span{
+  display: inline-block;
 }
 .content--filter_item_link-remove{
   position: absolute;
