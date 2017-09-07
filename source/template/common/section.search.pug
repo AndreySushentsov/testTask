@@ -1,8 +1,9 @@
 .content--search
   .content--input_container
    form(action='' method='post').content--form
-     input(type='text' placeholder='Поиск').content--input_field
-     input(type='submit' value='Найти').content--input_button
+     .content--input_field_container
+       input(type='text' placeholder='Поиск').content--input_field
+       input(type='submit' value='Найти').content--input_button
   .content--athorisation
     a(href='#').content--athorisation_link Войти
     a(href='#').content--athorisation_link Зарегистрироваться

@@ -63,6 +63,8 @@
   font-size: 18px;
   color: #000;
   max-height: 45px;
+  display: block;
+  overflow-y: hidden;
   //position: absolute;
   &:hover{
     color: $link_color2;

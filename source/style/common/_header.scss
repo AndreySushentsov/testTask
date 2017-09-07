@@ -1,7 +1,8 @@
 
 .header--container{
   padding-top: 10px;
-  height: 73px;
+  margin-bottom: 15px;
+  //height: 73px;
   //display: inline-block;
   //display: flex;
   //flex-direction: row;
@@ -14,6 +15,15 @@
 }
 .header--logo{
   margin-left: 40px;
+}
+.header--phones{
+  width: 145px;
+}
+.header--phones_descr{
+  width: 145px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .header--phones, .header--working_time{
   padding: 6px;
@@ -39,7 +49,8 @@
   margin-left: 61px;
   margin-bottom: -10px;
   position: absolute;
-  top: 20px;
+  //top: 20px;
+  bottom: 0;
 }
 .header--card_img{
   float: left;

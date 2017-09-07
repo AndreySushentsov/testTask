@@ -8,7 +8,7 @@
   margin-right: 28px;
   position: relative;
 }
-.content--input_field{
+.content--input_field_container{
   width: 500px;
   padding: 13px 10px;
   position: relative;
@@ -18,8 +18,16 @@
   color: #c9c8c8;
   font-size: 15px;
   font-style: italic;
+  background: #fff;
   behavior: url('/assets/js/PIE.htc');
   zoom:1;
+}
+.content--input_field{
+  height: 90%;
+  border: none;
+  background: transparent;
+  width: 80%;
+  outline: none;
 }
 .content--input_button{
   position: absolute;

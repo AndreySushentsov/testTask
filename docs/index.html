@@ -21,11 +21,11 @@
       <div class="header--container"><a class="heder--logo_link" href="#"><img class="header--logo" src="./assets/img/logo.png" alt="Logo"></a>
         <div class="header--phones">
           <div class="header--phones_descr">Интернет-магазин</div>
-          <div class="header--phones_number"> <b>(343) 111-22-32</b></div>
+          <div class="header--phones_number"><b>(343) 111-22-32</b></div>
         </div>
         <div class="header--phones">
           <div class="header--phones_descr">Строительные услуги</div>
-          <div class="header--phones_number"> <b>(343) 111-24-34</b></div>
+          <div class="header--phones_number"><b>(343) 111-24-34</b></div>
         </div>
         <div class="header--working_time">
           <div class="header--working_hourse">Пн-Пт, 9:00-18:00</div><a class="header--working_callback" href="#">Заказать обратный звонок</a>
@@ -80,13 +80,16 @@
             <h2 class="sidebar--looked_title">Вы смотрели</h2>
             <ul class="sidebar--looked_list">
               <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_1.png"></div><a class="sidebar--looked_title_link" href="#">Керамогранит Basic</a><span class="sidebar--looked_price"> 508 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a>
+                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_1.png"></div>
+                <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Basic</a><span class="sidebar--looked_price"> 508 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
               <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_2.png"></div><a class="sidebar--looked_title_link" href="#">Керамогранит Prestige</a><span class="sidebar--looked_price"> 914 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a>
+                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_2.png"></div>
+                <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Prestige</a><span class="sidebar--looked_price"> 914 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
               <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_3.png"></div><a class="sidebar--looked_title_link" href="#">Керамогранит Kito 600 * 600</a><span class="sidebar--looked_price"> 1300 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a>
+                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_3.png"></div>
+                <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Kito 600 * 600</a><span class="sidebar--looked_price"> 1300 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
             </ul>
           </div>
@@ -113,8 +116,10 @@
           <div class="content--search">
             <div class="content--input_container">
               <form class="content--form" action="" method="post">
-                <input class="content--input_field" type="text" placeholder="Поиск">
-                <input class="content--input_button" type="submit" value="Найти">
+                <div class="content--input_field_container">
+                  <input class="content--input_field" type="text" placeholder="Поиск">
+                  <input class="content--input_button" type="submit" value="Найти">
+                </div>
               </form>
             </div>
             <div class="content--athorisation"><a class="content--athorisation_link" href="#">Войти</a><a class="content--athorisation_link" href="#">Зарегистрироваться</a></div><span class="content--span"><i>Например:</i> плитка kerama marazzi</span>
@@ -125,8 +130,8 @@
             <ul class="content--filter_list">
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Цена: </div>
-                  <div class="content--filter_item_descr"> 
+                  <div class="content--filter_item_title">Цена:</div>
+                  <div class="content--filter_item_descr">
                     <div class="content--filter_item_input_wrapper">
                       <div class="content--fliter_price_container1">
                         <input class="content--filter_item_val_container1"><span class="content--filter_item_val_span ruble">Р</span>
@@ -141,10 +146,10 @@
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Размер, мм: </div>
+                  <div class="content--filter_item_title">Размер, мм:</div>
                   <div class="content--filter_item_descr content--filter_item_size">
                     <form class="content--filter_item_form">
-                      <input class="content--filter_item_input" type="number"><span class="content--filter_item_span"> -</span>
+                      <input class="content--filter_item_input" type="number"><span class="content--filter_item_span"> </span>
                       <input class="content--filter_item_input" type="number">
                     </form>
                   </div>
@@ -152,32 +157,32 @@
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Цвет: </div><a class="content--filter_item_link" href="#" id="colorsLink">Любой</a>
+                  <div class="content--filter_item_title">Цвет:</div><a class="content--filter_item_link" href="#" id="colorsLink">Любой</a>
                 </div>
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Фактура: </div><a class="content--filter_item_link" href="#">Любая </a>
+                  <div class="content--filter_item_title">Фактура:</div><a class="content--filter_item_link" href="#">Любая</a>
                 </div>
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Рисунок декора: </div><a class="content--filter_item_link" href="#">Любой</a>
+                  <div class="content--filter_item_title">Рисунок декора:</div><a class="content--filter_item_link" href="#">Любой</a>
                 </div>
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Поверхность: </div><a class="content--filter_item_link" href="#">Любая</a>
+                  <div class="content--filter_item_title">Поверхность:</div><a class="content--filter_item_link" href="#">Любая</a>
                 </div>
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Производитель: </div><a class="content--filter_item_link" href="#" id="brands">Любой</a>
+                  <div class="content--filter_item_title">Производитель:</div><a class="content--filter_item_link" href="#" id="brands">Любой</a>
                 </div>
               </li>
               <li class="content--filter_item">
                 <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Страна: </div><a class="content--filter_item_link" href="#">Любая</a>
+                  <div class="content--filter_item_title">Страна:</div><a class="content--filter_item_link" href="#">Любая</a>
                 </div>
               </li>
             </ul>

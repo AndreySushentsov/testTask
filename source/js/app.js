@@ -7,6 +7,7 @@ $(document).ready(function(){
   //   $('#colors').css({'display':'none'});
   // });
 
+
   $(document).mouseup(function(e) {
     var div = $('#colors');
     var div2 = $('.content--brands');
@@ -44,6 +45,7 @@ $(document).ready(function(){
     var x = e.pageX;
     var y = e.pageY;
   //  console.log(x);
+  //  $('.content--brands_link:eq(0)'),addClass('active');
     $('.content--brands').css({'display':'flex','top': y + 'px','left': x + 'px'});
   });
 
