@@ -1,51 +1,55 @@
 .content--filter
   h3.content--filter_title Подобрать
-  ul.content--filter_list
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Цена:
-        .content--filter_item_descr
-          .content--filter_item_input_wrapper
-            .content--fliter_price_container1
-              input.content--filter_item_val_container1
-              span.content--filter_item_val_span.ruble Р
-            .content--fliter_price_container2
-              input.content--filter_item_val_container2
-              span.content--filter_item_val_span.ruble Р
-            #slider-range
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Размер, мм:
-        .content--filter_item_descr.content--filter_item_size
-          form.content--filter_item_form
-            input(type='number').content--filter_item_input
+  form(action='#' method='get').content--filter_item_form
+    ul.content--filter_list
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Цена:
+          .content--filter_item_descr
+            .content--filter_item_input_wrapper
+              .content--fliter_price_container1
+                input(name='minPrice').content--filter_item_val_container1
+                span.content--filter_item_val_span.ruble Р
+              .content--fliter_price_container2
+                input(name='maxPrice').content--filter_item_val_container2
+                span.content--filter_item_val_span.ruble Р
+              #slider-range
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Размер, мм:
+          .content--filter_item_descr.content--filter_item_size
+            input(type='number' name='minsize').content--filter_item_input
             span.content--filter_item_span 
-            input(type='number').content--filter_item_input
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Цвет:
-        a(href='#')#colorsLink.content--filter_item_link Любой
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Фактура:
-        a(href='#').content--filter_item_link Любая
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Рисунок декора:
-        a(href='#').content--filter_item_link Любой
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Поверхность:
-        a(href='#').content--filter_item_link Любая
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Производитель:
-        a(href='#')#brands.content--filter_item_link Любой
-    li.content--filter_item
-      .content--filter_item_conteiner
-        .content--filter_item_title Страна:
-        a(href='#').content--filter_item_link Любая
-.content--filter_button_section
-  button.content--input_button.content--input_button-filter_button Найти
-  .content--span Найдено: 56 товаров
-  a(href='#').content--filter_item_link.content--filter_item_link-remove Сбросить фильтр
+            input(type='number' name='maxsize').content--filter_item_input
+      li.content--filter_item
+        .content--filter_item_conteiner
+          h4.content--filter_item_title Цвет:
+          input(type='hidden' name='color')#colorInput
+          a(href='#')#colorsLink.content--filter_item_link Любой
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Фактура:
+          a(href='#').content--filter_item_link Любая
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Рисунок декора:
+          a(href='#').content--filter_item_link Любой
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Поверхность:
+          a(href='#').content--filter_item_link Любая
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Производитель:
+          input(type='hidden' name='brands')#brandsInput
+          a(href='#')#brands.content--filter_item_link Любой
+      li.content--filter_item
+        .content--filter_item_conteiner
+          .content--filter_item_title Страна:
+          a(href='#').content--filter_item_link Любая
+    .content--filter_button_section
+      button.content--input_button.content--input_button-filter_button Найти
+      .content--button_span Найдено: 56 товаров
+      a(href='#').content--filter_item_link.content--filter_item_link-remove Сбросить фильтр
+.content--filter_popup
+  h2 Товар добавлен корзину

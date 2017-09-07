@@ -1,7 +1,7 @@
 #colors.content--colors
   ul.content--colors_list
-    -var items = [0,1,2,3,4,5,6,7,8,9,10,11]
+    -var items = [{index:0,attr:'no color'},{index:1,attr:'Белый'},{index:2, attr:'Красный'},{index:3,attr:'Коричневый'},{index:4,attr:'Желтый'},{index:5,attr:'Черный'},{index:6,attr:'Зеленый'},{index:7,attr:'Голубой'},{index:8,attr:'Синий'},{index:9,attr:'Фиолетовый'},{index:10,attr:'Розовый'},{index:11,attr:'Серо-голубой'}]
     each  item in items
       li.content--colors_item
-        a(href='#').content--colors_link
-          img(src=`./assets/img/color${item}.png`).content--colors_img
+        a(href='#' data-color=`${item.attr}`).content--colors_link
+          img(src=`./assets/img/color${item.index}.png`).content--colors_img

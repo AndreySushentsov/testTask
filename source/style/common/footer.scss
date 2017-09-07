@@ -9,22 +9,29 @@
 .footer{
   position: relative;
   padding-bottom: 50px;
-  padding-left:300px;
+//  padding-left:300px;
 }
 .footer--list{
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
+  width: 50%;
+  padding-left: 70px;
 }
 .footer--item{
   display: inline-block;
   margin-right: 23px;
+  margin-bottom: 10px;
 }
 .footer--link{
   color: #000;
   &:hover{
     color: $link_color2;
   }
+}
+.footer--copyright_container{
+  width: 44%;
+  margin: -10px auto;
 }
 .footer--copyright{
   margin-bottom: 6px;
@@ -35,4 +42,10 @@
   right: 0;
   margin-right: 40px;
   margin-top: -10px;
+  width: 130px;
+  height: 30px;
+}
+.footer--img{
+  width: 100%;
+  height: auto;
 }

@@ -18,7 +18,8 @@
 <body>
   <div class="container">
     <header>
-      <div class="header--container"><a class="heder--logo_link" href="#"><img class="header--logo" src="./assets/img/logo.png" alt="Logo"></a>
+      <div class="header--container">
+        <div class="header--logo_container"><a class="header--logo_link" href="#"><img class="header--logo" src="./assets/img/logo.png" alt="Logo"></a></div>
         <div class="header--phones">
           <div class="header--phones_descr">Интернет-магазин</div>
           <div class="header--phones_number"><b>(343) 111-22-32</b></div>
@@ -30,7 +31,8 @@
         <div class="header--working_time">
           <div class="header--working_hourse">Пн-Пт, 9:00-18:00</div><a class="header--working_callback" href="#">Заказать обратный звонок</a>
         </div>
-        <div class="header--card"><img class="header--card_img" src="./assets/img/basket.png">
+        <div class="header--card">
+          <div class="header--card_img_wrapper"><img class="header--card_img" src="./assets/img/basket.png"></div>
           <div class="header--busket_container"><a class="header--card_link" href="#">Корзина</a>
             <div class="header--card_span">Товаров на сумму:</div>
             <div class="header--card_summ">23 000</div>
@@ -51,7 +53,7 @@
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Грунтовки</a></li>
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Декоративные покрытия</a></li>
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Инструменты</a></li>
-                  <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Керамическая плитка , керамогранит</a></li>
+                  <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Керамическая плитка , керамогранит, керамогранит </a></li>
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Кирпич, стеновые материалы</a></li>
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Кровельный материал, гидроизоляция</a></li>
                   <li class="sidebar--menu_title"><a class="sidebar--menu_link" href="#">Лакокрасочная продукция</a></li>
@@ -79,16 +81,13 @@
           <div class="sidebar--looked">
             <h2 class="sidebar--looked_title">Вы смотрели</h2>
             <ul class="sidebar--looked_list">
-              <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_1.png"></div>
+              <li class="sidebar--looked_item"><a class="sidebar--looked_img_container" href="#"><img class="sidebar--looked_img" src="./assets/img/img_1.png"></a>
                 <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Basic</a><span class="sidebar--looked_price"> 508 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
-              <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_2.png"></div>
+              <li class="sidebar--looked_item"><a class="sidebar--looked_img_container" href="#"><img class="sidebar--looked_img" src="./assets/img/img_2.png"></a>
                 <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Prestige</a><span class="sidebar--looked_price"> 914 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
-              <li class="sidebar--looked_item">
-                <div class="sidebar--looked_img_container"><img class="sidebar--looked_img" src="./assets/img/img_3.png"></div>
+              <li class="sidebar--looked_item"><a class="sidebar--looked_img_container" href="#"><img class="sidebar--looked_img" src="./assets/img/img_3.png"></a>
                 <div class="sidebar--looked_content_container"><a class="sidebar--looked_title_link" href="#">Керамогранит Kito 600 * 600</a><span class="sidebar--looked_price"> 1300 рублей/м<sup>2</sup></span><a class="sidebar--looked_link" href="#">Добавить в корзину</a></div>
               </li>
             </ul>
@@ -115,9 +114,9 @@
           </div>
           <div class="content--search">
             <div class="content--input_container">
-              <form class="content--form" action="" method="post">
+              <form class="content--form" action="" method="get">
                 <div class="content--input_field_container">
-                  <input class="content--input_field" type="text" placeholder="Поиск">
+                  <input class="content--input_field" type="text" placeholder="Поиск" name="search">
                   <input class="content--input_button" type="submit" value="Найти">
                 </div>
               </form>
@@ -127,96 +126,117 @@
           <div class="content--breadcrumbs"><a class="content--breadcrumbs_link" href="#">Главная </a><a class="content--breadcrumbs_link active" href="#">/ Керамическая плитка, керамогранит</a></div>
           <div class="content--filter">
             <h3 class="content--filter_title">Подобрать</h3>
-            <ul class="content--filter_list">
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Цена:</div>
-                  <div class="content--filter_item_descr">
-                    <div class="content--filter_item_input_wrapper">
-                      <div class="content--fliter_price_container1">
-                        <input class="content--filter_item_val_container1"><span class="content--filter_item_val_span ruble">Р</span>
+            <form class="content--filter_item_form" action="#" method="get">
+              <ul class="content--filter_list">
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Цена:</div>
+                    <div class="content--filter_item_descr">
+                      <div class="content--filter_item_input_wrapper">
+                        <div class="content--fliter_price_container1">
+                          <input class="content--filter_item_val_container1" name="minPrice"><span class="content--filter_item_val_span ruble">Р</span>
+                        </div>
+                        <div class="content--fliter_price_container2">
+                          <input class="content--filter_item_val_container2" name="maxPrice"><span class="content--filter_item_val_span ruble">Р</span>
+                        </div>
+                        <div id="slider-range"></div>
                       </div>
-                      <div class="content--fliter_price_container2">
-                        <input class="content--filter_item_val_container2"><span class="content--filter_item_val_span ruble">Р</span>
-                      </div>
-                      <div id="slider-range"></div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Размер, мм:</div>
-                  <div class="content--filter_item_descr content--filter_item_size">
-                    <form class="content--filter_item_form">
-                      <input class="content--filter_item_input" type="number"><span class="content--filter_item_span"> </span>
-                      <input class="content--filter_item_input" type="number">
-                    </form>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Размер, мм:</div>
+                    <div class="content--filter_item_descr content--filter_item_size">
+                      <input class="content--filter_item_input" type="number" name="minsize"><span class="content--filter_item_span"> </span>
+                      <input class="content--filter_item_input" type="number" name="maxsize">
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Цвет:</div><a class="content--filter_item_link" href="#" id="colorsLink">Любой</a>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Фактура:</div><a class="content--filter_item_link" href="#">Любая</a>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Рисунок декора:</div><a class="content--filter_item_link" href="#">Любой</a>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Поверхность:</div><a class="content--filter_item_link" href="#">Любая</a>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Производитель:</div><a class="content--filter_item_link" href="#" id="brands">Любой</a>
-                </div>
-              </li>
-              <li class="content--filter_item">
-                <div class="content--filter_item_conteiner">
-                  <div class="content--filter_item_title">Страна:</div><a class="content--filter_item_link" href="#">Любая</a>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <h4 class="content--filter_item_title">Цвет:</h4>
+                    <input type="hidden" name="color" id="colorInput"><a class="content--filter_item_link" href="#" id="colorsLink">Любой</a>
+                  </div>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Фактура:</div><a class="content--filter_item_link" href="#">Любая</a>
+                  </div>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Рисунок декора:</div><a class="content--filter_item_link" href="#">Любой</a>
+                  </div>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Поверхность:</div><a class="content--filter_item_link" href="#">Любая</a>
+                  </div>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Производитель:</div>
+                    <input type="hidden" name="brands" id="brandsInput"><a class="content--filter_item_link" href="#" id="brands">Любой</a>
+                  </div>
+                </li>
+                <li class="content--filter_item">
+                  <div class="content--filter_item_conteiner">
+                    <div class="content--filter_item_title">Страна:</div><a class="content--filter_item_link" href="#">Любая</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="content--filter_button_section">
+                <button class="content--input_button content--input_button-filter_button">Найти</button>
+                <div class="content--button_span">Найдено: 56 товаров</div><a class="content--filter_item_link content--filter_item_link-remove" href="#">Сбросить фильтр</a>
+              </div>
+            </form>
           </div>
-          <div class="content--filter_button_section">
-            <button class="content--input_button content--input_button-filter_button">Найти</button>
-            <div class="content--span">Найдено: 56 товаров</div><a class="content--filter_item_link content--filter_item_link-remove" href="#">Сбросить фильтр</a>
+          <div class="content--filter_popup">
+            <h2>Товар добавлен корзину</h2>
           </div>
           <div class="content--goods">
             <div class="content--goods_sort"><span class="content--goods_sort_span">Сортировать по:  </span><a class="content--goods_sort_link active" href="#">названию</a><a class="content--goods_sort_link" href="#">цене</a></div>
             <ul class="content--goods_list">
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_1.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Basic</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину</span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_1.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Basic</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину</span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_2.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Prestige</a><span class="content--goods_price">914 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину          </span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_2.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Prestige</a><span class="content--goods_price">914 рублей/м<sup>2</sup> </span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину          </span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_3.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Kito 600 * 600</a><span class="content--goods_price">1300 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину</span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_3.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Kito 600 * 600</a><span class="content--goods_price">1300 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину</span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_4.png" alt="img"></div><a class="content--goods_title" href="#">Domino (Zeus)</a><span class="content--goods_price">305 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину </span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_4.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Domino (Zeus)</a><span class="content--goods_price">305 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину </span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_1.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Basic</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину</span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_1.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Basic</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину</span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_2.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Prestige</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину          </span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_2.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Prestige</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину          </span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_4.png" alt="img"></div><a class="content--goods_title" href="#">Dominj Zeus</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину</span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_4.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Dominj Zeus</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину</span></a></div>
               </li>
               <li class="content--goods_item">
-                <div class="content--goods_img_container"><img class="content--goods_img" src="./assets/img/img_3.png" alt="img"></div><a class="content--goods_title" href="#">Керамогранит Kito</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"><span class="content--goods_button_span">В корзину     </span></a>
+                <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_3.png" alt="img"></a></div>
+                <div class="content--goods_descr_container">       <a class="content--goods_title" href="#">Керамогранит Kito</a><span class="content--goods_price">508 рублей/м<sup>2</sup></span><a class="content--goods_button" href="#">
+                    <div class="content--goods_button_img_wrapper"> <img class="content--goods_button_img" src="./assets/img/cart_img.png"></div><span class="content--goods_button_span">В корзину     </span></a></div>
               </li>
             </ul>
           </div>
@@ -240,43 +260,43 @@
           </div>
           <div class="content--colors" id="colors">
             <ul class="content--colors_list">
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color0.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color1.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color2.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color3.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color4.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color5.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color6.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color7.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color8.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color9.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color10.png"></a></li>
-              <li class="content--colors_item"><a class="content--colors_link" href="#"><img class="content--colors_img" src="./assets/img/color11.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="no color"><img class="content--colors_img" src="./assets/img/color0.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Белый"><img class="content--colors_img" src="./assets/img/color1.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Красный"><img class="content--colors_img" src="./assets/img/color2.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Коричневый"><img class="content--colors_img" src="./assets/img/color3.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Желтый"><img class="content--colors_img" src="./assets/img/color4.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Черный"><img class="content--colors_img" src="./assets/img/color5.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Зеленый"><img class="content--colors_img" src="./assets/img/color6.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Голубой"><img class="content--colors_img" src="./assets/img/color7.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Синий"><img class="content--colors_img" src="./assets/img/color8.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Фиолетовый"><img class="content--colors_img" src="./assets/img/color9.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Розовый"><img class="content--colors_img" src="./assets/img/color10.png"></a></li>
+              <li class="content--colors_item"><a class="content--colors_link" href="#" data-color="Серо-голубой"><img class="content--colors_img" src="./assets/img/color11.png"></a></li>
             </ul>
           </div>
           <div class="content--brands">
             <ul class="content--brands_list">
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Любой</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Азори</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Атем</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Беларти</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Береза Куерамика</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Инреткерамика</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Италон</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Керабут</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Керама Морацци</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Кераимн</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Любой">Любой</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Азори">Азори</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Атем">Атем</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Беларти">Беларти</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Береза Куерамика">Береза Куерамика</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Инреткерамика">Инреткерамика</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Италон">Италон</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Керабут">Керабут</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Керама Морацци">Керама Морацци</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Кераимн">Кераимн</a></li>
             </ul>
             <ul class="content--brands_list">
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Ласселс Бергер</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Латина</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Нефрит Керамика</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Опочно</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Сокол</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Технотайл</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Тубадзин</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Уралкерамика</a></li>
-              <li class="content--brands_item"><a class="content--brands_link" href="#">Церсанит</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Ласселс Бергер">Ласселс Бергер</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Латина">Латина</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Нефрит Керамика">Нефрит Керамика</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Опочно">Опочно</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Сокол">Сокол</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Технотайл">Технотайл</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Тубадзин">Тубадзин</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Уралкерамика">Уралкерамика</a></li>
+              <li class="content--brands_item"><a class="content--brands_link" href="#" data-brands="Церсанит">Церсанит</a></li>
             </ul>
           </div>
         </div>
@@ -292,8 +312,10 @@
           <li class="footer--item"><a class="footer--link" href="#">Полезные ссылки</a></li>
           <li class="footer--item"><a class="footer--link" href="#">Контакты</a></li>
         </ul>
-        <p class="footer--copyright">&copy; 2013 ООО "Мир стройки"</p>
-        <p class="footer--adress">г.Ревда ул. О.Кошевого, 25, оф.10</p><a class="footer--logo" href="#"><img src="./assets/img/flogo.png"></a>
+        <div class="footer--copyright_container">
+          <p class="footer--copyright">&copy; 2013 ООО "Мир стройки"</p>
+          <p class="footer--adress">г.Ревда ул. О.Кошевого, 25, оф.10</p>
+        </div><a class="footer--logo" href="#"><img class="footer--img" src="./assets/img/flogo.png"></a>
       </div>
     </footer>
   </div>

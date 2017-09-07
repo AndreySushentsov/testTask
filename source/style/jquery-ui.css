@@ -124,7 +124,7 @@
 	height: 5px;
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -.7em;
+	top: -.92em;
 	margin-left: -.3em;
 }
 .ui-slider-horizontal .ui-slider-range {
@@ -161,7 +161,7 @@
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: Arial,Helvetica,sans-serif;
+
 	font-size: 1em;
 }
 .ui-widget .ui-widget {
@@ -171,11 +171,14 @@
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 1em;
+	
+	font-size: 1.2em;
 }
 .ui-widget.ui-widget-content {
 	border: 1px solid #c5c5c5;
+	border-radius: 4px;
+	box-shadow: inset 1px 1px 1px #9e9e98;
+	background: #dcdcdc;
 }
 .ui-widget-content {
 	border: 1px solid #dddddd;

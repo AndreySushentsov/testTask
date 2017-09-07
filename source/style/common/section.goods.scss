@@ -1,6 +1,6 @@
 .content--goods{
   background-color: #fff;
-  padding: 23px 10px;
+  padding: 25px 10px;
   padding-bottom: 0;
   box-shadow: 0 20px 30px -15px #c3c3c3;
 }
@@ -31,13 +31,17 @@
   margin: 12px;
   margin-top: 25px;
   font-size: 0;
+  width: 100%;
+  column-count: 2;
+  column-gap: 17px;
+
 }
 .content--goods_list > * {
     font-size: 14px;
 }
 
 .content--goods_item{
-  width: 50%;
+  width: 100%;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -48,8 +52,12 @@
 .content--goods_img_container{
   float: left;
   height: 100px;
+  width: 100px;
   box-shadow: 0 12px 13px -8px #c3c3c3;
   margin-right: 20px;
+
+}
+.content--goods_descr_container {
 
 }
 .content--goods_img{
@@ -79,8 +87,8 @@
 .content--goods_button{
   position: absolute;
   bottom: 0;
-  right: 0;
-  padding: 6px;
+  left: 120px;
+  padding: 9px 6px;
   width: 105px;
   -pie-background: linear-gradient(90deg, #ff5e0f, #ffc825);
   background: linear-gradient(0deg, #ff5e0f, #ffc825);
@@ -90,12 +98,19 @@
   font-size: 14px;
   border-radius: 3px;
   margin-right: 100px;
+  box-shadow: 0px 3px 4px -3px #74797f;
   behavior: url('/assets/js/PIE.htc');
   zoom:1;
 }
-.content--goods_button_img{
+.content--goods_button_img_wrapper {
   margin-right: 10px;
   position: absolute;
+  width: 18px;
+  height: 18px;
+}
+.content--goods_button_img{
+  width: 100%;
+  height: auto;
 }
 .content--goods_button_span{
   //margin-top: -7px;

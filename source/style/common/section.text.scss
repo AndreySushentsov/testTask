@@ -3,11 +3,16 @@
   column-count: 2
 }
 .content--text_title{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 21px;
 }
 .content--text{
-  margin-top: 28px;
+  margin-top: 45px;
   padding-left: 25px;
   height: 215px;
   //padding-bottom: 60px;
+}
+.content--text_paragraph{
+  font-size: 14px;
+  line-height: 1.5;
 }

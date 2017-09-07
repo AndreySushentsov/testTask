@@ -3,9 +3,9 @@
     -var items = ['Любой',"Азори","Атем","Беларти","Береза Куерамика","Инреткерамика","Италон","Керабут", "Керама Морацци","Кераимн"]
     each item in items
       li.content--brands_item
-        a(href='#').content--brands_link=item
+        a(href='#' data-brands=item).content--brands_link=item
   ul.content--brands_list
     -var items2 = ["Ласселс Бергер","Латина","Нефрит Керамика","Опочно","Сокол","Технотайл","Тубадзин","Уралкерамика","Церсанит"]
     each item2 in items2
       li.content--brands_item
-        a(href='#').content--brands_link=item2
+        a(href='#' data-brands=item2).content--brands_link=item2
