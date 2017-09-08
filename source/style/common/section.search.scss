@@ -30,6 +30,10 @@
   width: 80%;
   outline: none;
 }
+.content--input_field::placeholder{
+  font-style: italic;
+  font-family: 'PT Sans',sans-serif;
+}
 .content--input_button{
   position: absolute;
   right: 0;
