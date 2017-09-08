@@ -8,10 +8,12 @@
           .content--filter_item_descr
             .content--filter_item_input_wrapper
               .content--fliter_price_container1
-                input(name='minPrice').content--filter_item_val_container1
+                .content--filter_item_val_container1
+                input(type='hidden' name='minPrice').minPrice 
                 span.content--filter_item_val_span.ruble Р
               .content--fliter_price_container2
-                input(name='maxPrice').content--filter_item_val_container2
+                .content--filter_item_val_container2
+                input(type='hidden' name='maxPrice').maxPrice 
                 span.content--filter_item_val_span.ruble Р
               #slider-range
       li.content--filter_item

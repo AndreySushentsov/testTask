@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.content--brands').css({'display':'none'});
+  $('.ruble').css({'display':'inline-block'});
 
 //  popup bolck position
   $(document).mouseup(function(e) {
@@ -78,23 +78,26 @@ $('.content--goods_button').on('click', function(e) {
   var y = e.pageY;
   $('.content--filter_popup').fadeIn({'display':'block'});
 })
+
 //jquery UI slider range
-  $( "#slider-range" ).slider({
+   $( "#slider-range" ).slider({
     range: true,
-    min: 0,
-    max: 1000,
-    values: [0, 1000 ],
-    slide: function( event, ui ) {
-      $( ".content--filter_item_val_container1" ).val( ui.values[ 0 ] );
-      $( ".content--filter_item_val_container2" ).val( ui.values[ 1 ] );
+     min: 0,
+     max: 1000,
+     values: [0, 1000 ],
+     slide: function( event, ui ) {
+      $( ".content--filter_item_val_container1" ).text(  ui.values[ 0 ] );
+      $( ".content--filter_item_val_container2" ).text(  ui.values[ 1 ] );
+      $( ".minPrice " ).val( ui.values[ 0 ] );
+      $( ".maxPrice " ).val( ui.values[ 1 ] );
     },
     create: function( event, ui ) {
         $('.ui-slider-handle:eq(0)').append($(".content--fliter_price_container1"));
         $('.ui-slider-handle:eq(1)').append($(".content--fliter_price_container2"));
     }
-  });
+   });
 
-  $( ".content--filter_item_val_container1" ).val( $( "#slider-range" ).slider( "values", 0 ) );
-  $( ".content--filter_item_val_container2" ).val($( "#slider-range" ).slider( "values", 1 ) );
+  $( ".content--filter_item_val_container1" ).text( $( "#slider-range" ).slider( "values", 0 ) );
+  $( ".content--filter_item_val_container2" ).text( $( "#slider-range" ).slider( "values", 1 ) );
 
 });

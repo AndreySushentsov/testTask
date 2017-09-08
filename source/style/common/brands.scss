@@ -1,5 +1,4 @@
 .content--brands{
-  display: none;
   position: absolute;
   background:#fff;
   display: flex;
@@ -7,6 +6,7 @@
   padding: 10px;
   padding-left: 20px;
   border-radius: 4px;
+  display: none;
 }
 .content--brands_list{
   width: 130px;
