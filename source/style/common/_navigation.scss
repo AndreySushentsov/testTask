@@ -4,6 +4,7 @@
 .content--navigation_list{
   width: 100%;
   display: table;
+  border-bottom: 1px solid #fff;
 }
 .content--navigation_item{
   display: table-cell;
@@ -12,7 +13,6 @@
   border-left: 1px solid #fcae68;
   text-align: center;
   padding: 15px 10px;
-
   &:first-child{
     border-left: none;
     position: relative;

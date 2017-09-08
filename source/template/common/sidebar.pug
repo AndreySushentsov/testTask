@@ -1,8 +1,8 @@
 .sidebar--container
   .sidebar--inner_shadow
     .sidebar--header
-      img(src='./assets/img/folder.png').sidebar--header_img
-      h3.sidebar--header_title Каталог товаров
+      img(src='./assets/img/folder.png' alt='img').sidebar--header_img
+      .sidebar--header_title Каталог товаров
     .sidebar--menu
       ul.sidebar--menu_list
         -var items = ['Грунтовки',"Декоративные покрытия","Инструменты","Керамическая плитка , керамогранит, керамогранит ","Кирпич, стеновые материалы", "Кровельный материал, гидроизоляция", "Лакокрасочная продукция", "Ленты, скотчи, серпянки","Листовой материал","Материал для фасадов","Металопрокат","Метизы, крепеж", "Напольные покрытия","Панели ПВХ, комплектующие","Пены монтажные, герметики","Пиломатериал", "Поликорбонат сотовый, типлицы", "Потолки и потолочные системы", "Сетки", "Строительные смеси", "Тара, упаковка", "Тепло-, шумоизоляция", "Теплые полы","Цемент, сыпучие материалы"]
@@ -14,21 +14,21 @@
   ul.sidebar--looked_list
     li.sidebar--looked_item
       a(href='#').sidebar--looked_img_container
-        img(src='./assets/img/img_1.png').sidebar--looked_img
+        img(src='./assets/img/img_1.png' alt='img').sidebar--looked_img
       .sidebar--looked_content_container
         a(href='#').sidebar--looked_title_link Керамогранит Basic
         span.sidebar--looked_price  508 рублей/м<sup>2</sup>
         a(href='#').sidebar--looked_link Добавить в корзину
     li.sidebar--looked_item
       a(href='#').sidebar--looked_img_container
-        img(src='./assets/img/img_2.png').sidebar--looked_img
+        img(src='./assets/img/img_2.png' alt='img').sidebar--looked_img
       .sidebar--looked_content_container
         a(href='#').sidebar--looked_title_link Керамогранит Prestige
         span.sidebar--looked_price  914 рублей/м<sup>2</sup>
         a(href='#').sidebar--looked_link Добавить в корзину
     li.sidebar--looked_item
       a(href='#').sidebar--looked_img_container
-        img(src='./assets/img/img_3.png').sidebar--looked_img
+        img(src='./assets/img/img_3.png' alt='img').sidebar--looked_img
       .sidebar--looked_content_container
         a(href='#').sidebar--looked_title_link Керамогранит Kito 600 * 600
         span.sidebar--looked_price  1300 рублей/м<sup>2</sup>
@@ -40,4 +40,4 @@
     each social in socials
       li.sidebar--social_item
         a(href='#').sidebar--social_link
-          img(src=`./assets/img/${social}`).sidebar--social_img
+          img(src=`./assets/img/${social}` alt='img').sidebar--social_img

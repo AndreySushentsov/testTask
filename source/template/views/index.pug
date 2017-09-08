@@ -1,33 +1,34 @@
-include ../common/_template.pug
+doctype html
+html(lang='zxx')
+  include ../common/_template.pug
+  body
+    .container
+      header
+        include ../common/header.pug
+      main
+        .content--container
+          .sidebar
+            include ../common/sidebar.pug
+          .content
+            include ../common/_navigation.pug
+            include ../common/section.search.pug      
+            include ../common/section.breadcrumbs.pug
+            include ../common/section.filter.pug
+            include ../common/section.goods.pug
+            include ../common/section.pagination.pug
+            include ../common/section.text.pug
+            include ../common/colors.pug
+            include ../common/brands.pug
+      footer
+        include ../common/_footer.pug
+    script(src='./assets/js/app.js' defer)
 
-body
-  .container
-    header
-      include ../common/header.pug
-    main
-      .content--container
-        .sidebar
-          include ../common/sidebar.pug
-        .content
-          include ../common/_navigation.pug
-          include ../common/section.search.pug      
-          include ../common/section.breadcrumbs.pug
-          include ../common/section.filter.pug
-          include ../common/section.goods.pug
-          include ../common/section.pagination.pug
-          include ../common/section.text.pug
-          include ../common/colors.pug
-          include ../common/brands.pug
-    footer
-      include ../common/_footer.pug
-  script(src='./assets/js/app.js' defer)
-
-  <!--[if lt IE 9]>
-  script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
-  <![endif]-->
- 
-  //script(src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous")
-  script(src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=" crossorigin="anonymous")
-  //script(src='./assets/js/jquery-3.2.1.min.js')
-  //script(src='./assets/js/jquery.min.js')
-  script(src='./assets/js/jquery-ui.min_1.js' )
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+   
+    //script(src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=" crossorigin="anonymous")
+    //script(src='./assets/js/jquery-3.2.1.min.js')
+    //script(src='./assets/js/jquery.min.js')
+    script(src='./assets/js/jquery-ui.min_1.js' )

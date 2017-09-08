@@ -1,11 +1,12 @@
 .content--filter{
   background: #fbf8e8;
   padding-top: 26px;
-  padding-bottom: 10px;
+  //padding-bottom: 10px;
 }
 .content--filter_title{
   padding-left: 30px;
   font-size: 17px;
+  font-weight: bolder;
 }
 .content--filter_item_input_wrapper{
   position: relative;
@@ -36,7 +37,7 @@
   //background:#fbf8e8;
   text-align: right;
   font-family: 'PT_Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   &:after{
     content: ' ';
     display: inline-block;
@@ -117,6 +118,7 @@
 .content--filter_item_link{
   color: $link_color2;
   text-decoration: none;
+  font-size: 13px;
   border-bottom: 1px dashed $link_color2;
   &:hover{
     color:$link_color;
@@ -125,20 +127,33 @@
 }
 .content--filter_button_section{
   position: relative;
-  border-top: 4px solid #fff;
+  border-top: 2px solid #fff;
   background: #fbf5d3;
-  padding: 10px 25px;
-  box-shadow: 0 20px 30px -15px #c3c3c3;
+  padding: 15px 25px;
   vertical-align: middle;
+  z-index: 1;
+  &:after{
+    content: '';
+    width: 92%;
+    display: block;
+    height: 54px;
+    margin: 0 auto;
+    box-shadow: 0 20px 30px -15px #c3c3c3;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
 }
 .content--input_button-filter_button{
   position: relative;
   margin-right: 15px;
   padding: 9px 17px;
   margin-top: 0;
+  box-shadow: 0px 1px 2px #c2bda3;
 }
 .content--button_span{
   display: inline-block;
+  font-size: 13px;
 }
 .content--filter_item_link-remove{
   position: absolute;

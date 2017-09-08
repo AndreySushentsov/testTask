@@ -39,8 +39,8 @@ $(document).ready(function(){
     $('#brandsInput').val('');
     $('#colorInput').val('');
     $( '#slider-range' ).slider( "values", [ 0, 1000 ] );
-    $( '.content--filter_item_val_container1' ).val( $( "#slider-range" ).slider( "values", 0 ) );
-    $( '.content--filter_item_val_container2' ).val($( "#slider-range" ).slider( "values", 1 ) );
+    $( '.content--filter_item_val_container1' ).text( $( "#slider-range" ).slider( "values", 0 ) );
+    $( '.content--filter_item_val_container2' ).text($( "#slider-range" ).slider( "values", 1 ) );
   })
 
 

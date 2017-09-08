@@ -7,23 +7,20 @@
   padding-left: 20px;
   border-radius: 4px;
   display: none;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+  behavior:url('/assets/js/PIE.htc');
+  z-index: 100;
 }
 .content--brands_list{
   width: 130px;
 }
 .content--brands_item{
-  margin: 9px 0;
+  margin: 14px 0;
 }
 .content--brands_link{
   color: $link_color2;
   padding: 4px 7px;
-  transition: 0.2s;
   &:hover{
     color: $link_color;
-    background-color: #ff8315;
-    color: #fff;
-    border-radius: 3px;
-    box-shadow: inset 1px 1px 2px #bd6210;
-    text-decoration: none;
   }
 }

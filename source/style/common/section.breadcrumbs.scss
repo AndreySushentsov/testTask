@@ -1,7 +1,13 @@
 .content--breadcrumbs{
   background: #fff;
-  padding: 15px 0;
+  //padding: 15px 0;
+  height: 50px;
+  vertical-align: middle;
   padding-left: 24px;
+  position: relative;
+}
+.content--breadcrumbs_link_container{
+  @include centred(y);
 }
 .content--breadcrumbs_link{
   color: #000;
