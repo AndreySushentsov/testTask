@@ -27,6 +27,10 @@
     border-right: none;
     border-top-right-radius: 5px;
   }
+  &:hover{
+    -pie-background:linear-gradient(90deg, #ecb000, #d64c08);
+    background: linear-gradient(0deg, #ecb000, #d64c08);
+  }
 }
 .content--navigation_link{
   text-decoration: none;

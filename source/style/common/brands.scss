@@ -1,24 +1,42 @@
 .content--brands{
   position: absolute;
   background:#fff;
-  display: flex;
-  flex-direction: row;
+  //display: flex;
+  //flex-direction: row;
   padding: 10px;
-  padding-left: 20px;
+  //padding-left: 20px;
+  padding: 0 15px;
   border-radius: 4px;
   display: none;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
   behavior:url('./assets/js/PIE.htc');
   z-index: 100;
+  &:before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin-top: -5px;
+    margin-left: 40px;
+    position: absolute;
+    transform: rotate(45deg);
+  }
 }
 .content--brands_list{
   width: 130px;
+  vertical-align: top;
+  display: inline-block;
+  &:first-child{
+    margin-right: 20px
+  }
 }
 .content--brands_item{
-  margin: 14px 0;
+  margin: 15px 0;
 }
 .content--brands_link{
   color: $link_color2;
+  font-size: 13px;
   padding: 4px 7px;
   &:hover{
     color: $link_color;

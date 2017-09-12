@@ -3,38 +3,56 @@ $(document).ready(function(){
 
 //  popup bolck position
   $(document).mouseup(function(e) {
-    var div = $('#colors');
-    var div2 = $('.content--brands');
-    var div3 = $('.content--filter_popup');
 
-      if(!div.is(e.target) && div.has(e.target).length === 0){
-        div.hide();
-      }
+    function hideBlock(x) {
+      if(!x.is(e.target) && x.has(e.target).length === 0){
+        x.hide();
+      };
+    }
 
-      if(!div2.is(e.target) && div2.has(e.target).length === 0){
-        div2.hide();
-      }
+    hideBlock($('#colors'));
+    hideBlock($('.content--brands'));
+    hideBlock($('.content--filter_popup'));
+    // var div = $('#colors');
+    // var div2 = $('.content--brands');
+    // var div3 = $('.content--filter_popup');
 
-      if(!div3.is(e.target) && div3.has(e.target).length === 0){
-        div3.hide();
-      }
-  })
+      // if(!div.is(e.target) && div.has(e.target).length === 0){
+      //   div.hide();
+      // }
+      //
+      // if(!div2.is(e.target) && div2.has(e.target).length === 0){
+      //   div2.hide();
+      // }
+      //
+      // if(!div3.is(e.target) && div3.has(e.target).length === 0){
+      //   div3.hide();
+      // }
+  });
 
 //remove padding-bottom on goods list
   //$('.content--goods_item:eq(3)').css({'margin-bottom':'20px'});
   //$('.content--goods_item:eq(7)').css({'margin-bottom':'20px'});
 
 
-
-
 //filter remove
   $('.content--filter_item_link-remove').on ('click', function(e) {
-    $('.content--filter_item_input').val('');
-    $('.content--input_field').val('');
+    function emptyVal(selector) {
+      selector.val('');
+    };
+    emptyVal($('.content--filter_item_input'));
+    emptyVal($('.content--input_field'));
+    emptyVal($('#brandsInput'));
+    emptyVal($('#colorInput'));
+
     $('#colorsLink').text('Любой');
     $('#brands').text('Любой');
-    $('#brandsInput').val('');
-    $('#colorInput').val('');
+
+    // $('.content--filter_item_input').val('');
+    // $('.content--input_field').val('');
+    // $('#brandsInput').val('');
+    // $('#colorInput').val('');
+
     $( '#slider-range' ).slider( "values", [ 0, 1000 ] );
     $( '.content--filter_item_val_container1' ).text( $( "#slider-range" ).slider( "values", 0 ) );
     $( '.content--filter_item_val_container2' ).text($( "#slider-range" ).slider( "values", 1 ) );
@@ -42,14 +60,29 @@ $(document).ready(function(){
 
 
 // colors link filte
+// function blockPosition(e, selector) {
+//   e.preventDefault();
+//   var x = e.pageX;
+//   var y = e.pageY;
+//   if(selector == $('#colorsLink')){
+//     $('#colors').css({'display':'block','top': (y + 10) + 'px','left': (x - 50) + 'px'});
+//   }
+//
+//   if(selector == $('#brands')){
+//     $('.content--brands').css({'display':'flex','top': (y + 10) + 'px','left': (x - 50) + 'px'});
+//   }
+// }
+
+// $('#colorsLink').on('click', blockPosition(e, $('#colorsLink')));
+// $('#brands').on('click', blockPosition(e, $('#brands')));
   $('#colorsLink').on('click', function(e) {
     e.preventDefault();
     var x = e.pageX;
     var y = e.pageY;
-    $('#colors').css({'display':'block','top': (y + 10) + 'px','left': (x - 50) + 'px'});
+    $('#colors').css({'display':'block','top': (y + 15) + 'px','left': (x - 55) + 'px'});
   });
 
-  $('.content--colors_link').on('click', function(e) {
+  $('.content--colors_link').on('click',function(e) {
     e.preventDefault();
     var color = $(this).attr('data-color');
     $('#colorsLink').text(color);
@@ -58,12 +91,12 @@ $(document).ready(function(){
   });
 
 
-//  brnads filter
-  $('#brands').on('click', function(e) {
+ //brnads filter
+  $('#brands').click(function(e) {
     e.preventDefault();
     var x = e.pageX;
     var y = e.pageY;
-    $('.content--brands').css({'display':'flex','top': (y + 10) + 'px','left': (x - 50) + 'px'});
+    $('.content--brands').css({'display':'block','top': (y + 15) + 'px','left': (x - 55) + 'px'});
   });
 
   $('.content--brands_link').on('click', function(e) {

@@ -1,6 +1,6 @@
 
 .header--container{
-  padding-top: 10px;
+  padding-top: 20px;
   margin-bottom: 12px;
   position: relative;
 }
@@ -11,17 +11,19 @@
   height: 50px;
   margin-left: 40px;
   margin-right: 10px;
+  vertical-align: top;
 }
 .header--logo_link{
   display: block;
-  position: absolute;
+  //position: absolute;
   height: 50px;
   overflow: hidden;
-  top: 10px;
+  //top: 10px;
 }
 
 .header--phones, .header--working_time, .header--card{
   display: inline-block;
+  vertical-align: top;
 }
 .header--logo{
   width: 100%;
@@ -38,10 +40,11 @@
 }
 .header--phones, .header--working_time{
   padding: 6px;
-  margin-left:13px;
+  margin-left:8px;
 }
 .header--phones_number{
   font-size: 19px;
+  margin-top: 2px;
   @include tablet{
     font-size: 16px;
   };
@@ -63,25 +66,28 @@
 }
 .header--card{
   padding: 6px;
-  margin-left: 61px;
+  margin-left: 70px;
   margin-bottom: -10px;
-  position: absolute;
+  //position: absolute;
   //top: 20px;
-  bottom: 0;
+  //bottom: 0;
 }
 .header--card_img_wrapper{
   width: 25px;
   height: 25px;
-  float: left;
-  margin-bottom: 20px;
-  margin-right:  14px;
+  //float: left;
+  //margin-bottom: 20px;
+  margin-right:  10px;
+  display: inline-block;
+  vertical-align: top;
 }
 .header--card_img{
   width: 100%;
   height: auto;
 }
 .header--busket_container{
-  width: 150px;
+  display: inline-block;
+  width: 100px;
 }
 .header--card_link{
   color: $link_color2;

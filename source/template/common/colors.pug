@@ -1,7 +1,8 @@
 #colors.content--colors
   ul.content--colors_list
-    -var items = [{index:0,attr:'no color'},{index:1,attr:'Белый'},{index:2, attr:'Красный'},{index:3,attr:'Коричневый'},{index:4,attr:'Желтый'},{index:5,attr:'Черный'},{index:6,attr:'Зеленый'},{index:7,attr:'Голубой'},{index:8,attr:'Синий'},{index:9,attr:'Фиолетовый'},{index:10,attr:'Розовый'},{index:11,attr:'Серо-голубой'}]
+    -var items = [{index:0,attr:'Любой',span:'Любой'},{index:1,attr:'Белый',span:''},{index:2, attr:'Красный',span:''},{index:3,attr:'Коричневый',span:''},{index:4,attr:'Желтый',span:''},{index:5,attr:'Черный',span:''},{index:6,attr:'Зеленый',span:''},{index:7,attr:'Голубой',span:''},{index:8,attr:'Синий',span:''},{index:9,attr:'Фиолетовый',span:''},{index:10,attr:'Розовый',span:''},{index:11,attr:'Серо-голубой',span:''}]
     each  item in items
       li.content--colors_item
         a(href='#' data-color=`${item.attr}`).content--colors_link
           img(src=`./assets/img/color${item.index}.png` alt='img').content--colors_img
+          span.content--colors_span=item.span
