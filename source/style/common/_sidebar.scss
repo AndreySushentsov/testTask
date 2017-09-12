@@ -82,6 +82,7 @@
   //float: right;
   vertical-align: top;
   font-size: 13px;
+  width: 135px;
 }
 .sidebar--looked_img_container{
   width: 50px;
@@ -101,7 +102,7 @@
   color: $link_color;
   max-height: 30px;
   display: block;
-  width: 125px;
+  //width: 125px;
   overflow: hidden;
   //position: absolute;
   &:hover{
@@ -115,7 +116,7 @@
   //margin-left: 60px;
   margin-top: 13px;
   margin-bottom: 7px;
-  width: 125px;
+  //width: 125px;
   height: 13px;
   overflow: hidden;
 }

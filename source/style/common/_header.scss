@@ -42,6 +42,12 @@
 }
 .header--phones_number{
   font-size: 19px;
+  @include tablet{
+    font-size: 16px;
+  };
+  @include mobile{
+    font-size: 13px;
+  };
 }
 .header--working_callback{
   display: block;

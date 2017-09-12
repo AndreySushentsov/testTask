@@ -21,14 +21,11 @@ $(document).ready(function(){
   })
 
 //remove padding-bottom on goods list
-  $('.content--goods_item:eq(3)').css({'margin-bottom':'20px'});
-  $('.content--goods_item:eq(7)').css({'margin-bottom':'20px'});
+  //$('.content--goods_item:eq(3)').css({'margin-bottom':'20px'});
+  //$('.content--goods_item:eq(7)').css({'margin-bottom':'20px'});
 
 
-//  preventDefault on links
-  $('a').on('click', function(e){
-    e.preventDefault();
-  })
+
 
 //filter remove
   $('.content--filter_item_link-remove').on ('click', function(e) {
@@ -46,12 +43,14 @@ $(document).ready(function(){
 
 // colors link filte
   $('#colorsLink').on('click', function(e) {
+    e.preventDefault();
     var x = e.pageX;
     var y = e.pageY;
     $('#colors').css({'display':'block','top': (y + 10) + 'px','left': (x - 50) + 'px'});
   });
 
   $('.content--colors_link').on('click', function(e) {
+    e.preventDefault();
     var color = $(this).attr('data-color');
     $('#colorsLink').text(color);
     $('#colorInput').val(color);
@@ -61,12 +60,14 @@ $(document).ready(function(){
 
 //  brnads filter
   $('#brands').on('click', function(e) {
+    e.preventDefault();
     var x = e.pageX;
     var y = e.pageY;
     $('.content--brands').css({'display':'flex','top': (y + 10) + 'px','left': (x - 50) + 'px'});
   });
 
   $('.content--brands_link').on('click', function(e) {
+    e.preventDefault();
     var brands = $(this).attr('data-brands');
     $('#brands').text(brands);
     $('#brandsInput').val(brands);
@@ -74,6 +75,7 @@ $(document).ready(function(){
   });
 
 $('.content--goods_button').on('click', function(e) {
+  e.preventDefault();
   var x = e.pageX;
   var y = e.pageY;
   $('.content--filter_popup').fadeIn({'display':'block'});
