@@ -12,13 +12,13 @@
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 0px 4px 4px -2px #aeaeae;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
 }
 .sidebar--inner_shadow{
   padding-top: 6px;
   padding-bottom: 12px;
   box-shadow: inset  -10px 0px 50px -10px #e4eced;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
 }
 .sidebar--header{
   margin-top: 12px;
@@ -46,7 +46,7 @@
   transition: 0.2s;
   font-size: 13px;
   text-shadow: 1px 0px 1px #bbd9e4;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
   &:hover{
     background: #eff4f5;
     color: #000;
@@ -95,7 +95,7 @@
 .sidebar--looked_img{
   width: 100%;
   box-shadow: 0 10px 35px -15px #000;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
   zoom:1;
 }
 .sidebar--looked_title_link{

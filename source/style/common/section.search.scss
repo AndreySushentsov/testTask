@@ -22,7 +22,7 @@
   font-size: 15px;
   font-style: italic;
   background: #fff;
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('../js/PIE.htc');
   zoom:1;
 }
 .content--input_field{
@@ -51,7 +51,7 @@
   -pie-background:linear-gradient(90deg, #ff5e0f, #ffc825);
   background: linear-gradient(0deg, #ff5e0f, #ffc825);
   background: -webkit-linear-gradient(90deg, #ff5e0f, #ffc825);
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('../js/PIE.htc');
   zoom:1;
   transition: 0.2s;
   &:hover{

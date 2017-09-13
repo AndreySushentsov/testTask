@@ -17,13 +17,13 @@
     border-left: none;
     position: relative;
     zoom:1;
-    behavior: url('./assets/js/PIE.htc');
+    behavior: url('../js/PIE.htc');
     border-top-left-radius: 5px;
   };
   &:last-child{
     position: relative;
     zoom:1;
-    behavior: url('./assets/js/PIE.htc');
+    behavior: url('../js/PIE.htc');
     border-right: none;
     border-top-right-radius: 5px;
   }

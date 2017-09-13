@@ -9,7 +9,7 @@
   z-index: 100;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
   border-radius: 5px;
-  behavior:url('./assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
   &:before{
     content: '';
     display: block;
@@ -42,7 +42,7 @@
   border-radius: 2px;
   margin: 4px;
   overflow: hidden;
-  behavior:url('./assets/js/PIE.htc');
+  behavior:url('../js/PIE.htc');
   &:hover{
     background: rgba(255, 255, 255, 0);
     z-index: 10;
