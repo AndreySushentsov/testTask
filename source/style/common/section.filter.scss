@@ -72,7 +72,7 @@
   border-radius: 2px;
   padding-left: 10px;
   vertical-align: middle;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('./assets/js/PIE.htc');
   zoome:1;
   position: relative;
 }
@@ -198,7 +198,7 @@
   background: #fff;
   border-radius: 15px;
   box-shadow: 3px 3px 13px #C3C3C2;
-  behavior:url('/assets/js/PIE.htc');
+  behavior:url('./assets/js/PIE.htc');
   @include centred();
   display: none;
 }

@@ -26,7 +26,7 @@
   font-size: 15px;
   font-style: italic;
   background: #fff;
-  behavior: url('/assets/js/PIE.htc');
+  behavior: url('./assets/js/PIE.htc');
   zoom:1;
   @include tablet{
     width: 100%;
