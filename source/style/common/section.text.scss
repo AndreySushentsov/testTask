@@ -1,6 +1,9 @@
 .content--text_column{
   height: 100%;
-  column-count: 2
+  column-count: 2;
+  @include mobile{
+    column-count: 1
+  };
 }
 .content--text_title{
   margin-bottom: 15px;

@@ -17,11 +17,20 @@
   margin-bottom: 25px;
   width: 50%;
   padding-left: 70px;
+  @include laptop{
+    width: 80%;
+    //margin-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+  };
 }
 .footer--item{
   display: inline-block;
   margin-right: 23px;
   margin-bottom: 10px;
+  @include laptop{
+    display: block;
+  };
 }
 .footer--link{
   color: #000;
@@ -32,6 +41,9 @@
 .footer--copyright_container{
   width: 44%;
   margin: -10px auto;
+  @include laptop{
+    margin-left: 40px;
+  };
 }
 .footer--copyright{
   margin-bottom: 6px;

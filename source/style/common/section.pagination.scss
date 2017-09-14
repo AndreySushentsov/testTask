@@ -3,6 +3,12 @@
 }
 .content--pagination_list{
   margin-left: 47.4%;
+  @include tablet{
+    margin-left: 20%;
+  };
+  @include mobile{
+    margin-left: 10%;
+  };
 }
 .content--pagination_item{
   display: inline-block;

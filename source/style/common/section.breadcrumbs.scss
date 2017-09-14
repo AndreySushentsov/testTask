@@ -10,9 +10,12 @@
   @include centred(y);
 }
 .content--breadcrumbs_link{
-  color: #000;
+  color:#666666;
   display: inline-block;
   font-size: 13px;
+  &:hover{
+    color: $link_color;
+  }
 }
 .content--breadcrumbs_link.active{
   text-decoration: none;

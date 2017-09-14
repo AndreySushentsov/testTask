@@ -58,6 +58,13 @@ $(document).ready(function(){
     $( '.content--filter_item_val_container2' ).text($( "#slider-range" ).slider( "values", 1 ) );
   })
 
+// add class ACTIVE
+$('.content--goods_sort_link').on('click', function(e) {
+  e.preventDefault();
+  $('.content--goods_sort_link').removeClass('active');
+  $(this).addClass('active');
+})
+
 
 // colors link filte
 // function blockPosition(e, selector) {

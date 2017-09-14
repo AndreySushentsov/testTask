@@ -5,7 +5,11 @@
   box-shadow: 0 20px 30px -15px #c3c3c3;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('/assets/js/PIE.htc');
+  @include mobile{
+    padding: 0;
+    padding:20px 0;
+  };
 }
 .content--goods_sort{
   padding-bottom: 5px;
@@ -14,15 +18,21 @@
 .content--goods_sort_span{
   font-size: 18px;
   font-weight: bold;
+  padding-left: 5px;
   //margin-left: 13px;
 }
 .content--goods_sort_link{
   display: inline-block;
+  padding: 4px 7px;
   margin-left: 10px;
   font-size: 13px;
-  text-decoration: none;
+  text-decoration: dashed;
   color: $link_color2;
   border-bottom: 1px dashed $link_color2;
+  &:hover{
+    color: $link_color;
+    border-bottom: 1px dashed $link_color;
+  }
 }
 .content--goods_sort_link.active{
   padding: 4px 7px;
@@ -30,15 +40,21 @@
   color: #fff;
   border-radius: 3px;
   box-shadow: inset 1px 1px 2px #bd6210;
+  border-bottom:1px solid transparent;
 }
 .content--goods_list{
   //margin: 12px;
   //margin-top: 25px;
   font-size: 0;
   width: 100%;
+  padding-left: 5px;
   //column-count: 2;
   //column-gap: 25px;
-
+  @include laptop{
+    padding-left:0;
+    width: 95%;
+    margin: 0 auto;
+  };
 }
 .content--goods_list > * {
     font-size: 14px;
@@ -50,11 +66,26 @@
   display: inline-block;
   box-sizing: border-box;
   padding-right: 10px;
+  //padding-left: 5px;
   vertical-align: top;
   margin: 20px 0;
   &:nth-child(even){
-    padding-left: 20px;
+    padding-left: 10px;
   }
+  @include tablet{
+    display: block;
+    width: 90%;
+    &:nth-child(even){
+      padding-left: 0;
+    }
+  };
+  @include laptop{
+    width: 100%;
+    &:nth-child(even){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  };
 }
 .content--goods_img_container{
   //float: left;
@@ -115,13 +146,12 @@
   border-radius: 3px;
   margin-right: 100px;
   box-shadow: 0px 3px 4px -3px #74797f;
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('/assets/js/PIE.htc');
   zoom:1;
-
   &:hover{
-    background: linear-gradient(0deg, #ecb000, #d64c08);
-    background: -webkit-linear-gradient(90deg, #ecb000, #d64c08);
-    -pie-background:linear-gradient(90deg, #ecb000, #ecb000);
+    background: #ffa95d;
+    //background: -webkit-linear-gradient(90deg, #ecb000, #d64c08);
+    -pie-background:#ffa95d;
   }
 }
 .content--goods_button_img_wrapper {

@@ -9,7 +9,7 @@
   border-radius: 4px;
   display: none;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
-  behavior:url('./assets/js/PIE.htc');
+  behavior:url('/assets/js/PIE.htc');
   z-index: 100;
   &:before{
     content: '';
@@ -39,6 +39,11 @@
   font-size: 13px;
   padding: 4px 7px;
   &:hover{
-    color: $link_color;
+    padding: 4px 7px;
+    background-color: #ff8315;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 2px #bd6210;
+    text-decoration: none;
   }
 }

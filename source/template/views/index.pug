@@ -10,11 +10,12 @@ html(lang='zxx')
           .sidebar
             include ../common/sidebar.pug
           .content
-            include ../common/_navigation.pug
-            include ../common/section.search.pug      
-            include ../common/section.breadcrumbs.pug
-            include ../common/section.filter.pug
-            include ../common/section.goods.pug
+            .content--shodow_container
+              include ../common/_navigation.pug
+              include ../common/section.search.pug      
+              include ../common/section.breadcrumbs.pug
+              include ../common/section.filter.pug
+              include ../common/section.goods.pug
             include ../common/section.pagination.pug
             include ../common/section.text.pug
             include ../common/colors.pug

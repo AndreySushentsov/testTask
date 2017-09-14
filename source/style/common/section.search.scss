@@ -10,6 +10,10 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
+  @include tablet{
+    width: 100%;
+    display: block;
+  };
 }
 .content--input_field_container{
   width: 500px;
@@ -22,8 +26,12 @@
   font-size: 15px;
   font-style: italic;
   background: #fff;
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('/assets/js/PIE.htc');
   zoom:1;
+  @include tablet{
+    width: 100%;
+    //display: block;
+  };
 }
 .content--input_field{
   height: 90%;
@@ -35,6 +43,7 @@
 .content--input_field::placeholder{
   font-style: italic;
   font-family: 'PT Sans',sans-serif;
+  color: #c6c6c6;
 }
 .content--input_button{
   position: absolute;
@@ -51,13 +60,14 @@
   -pie-background:linear-gradient(90deg, #ff5e0f, #ffc825);
   background: linear-gradient(0deg, #ff5e0f, #ffc825);
   background: -webkit-linear-gradient(90deg, #ff5e0f, #ffc825);
-  behavior: url('./assets/js/PIE.htc');
+  behavior: url('/assets/js/PIE.htc');
   zoom:1;
   transition: 0.2s;
   &:hover{
     cursor: pointer;
-    -pie-background:linear-gradient(90deg, #ecb000, #d64c08);
-    background: linear-gradient(0deg, #ecb000, #d64c08);
+    -pie-background:#ffa95d;
+    background: #ffa95d;
+    //color:#adadad;
   }
 }
 .content--athorisation{
@@ -67,6 +77,9 @@
   //top: 20px;
   overflow: hidden;
   display: inline-block;
+  @include tablet{
+    display: block;
+  };
 }
 .content--athorisation_link{
   display: block;

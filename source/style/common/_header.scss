@@ -3,6 +3,9 @@
   padding-top: 20px;
   margin-bottom: 12px;
   position: relative;
+  @include tablet{
+    width: 100%;
+  };
 }
 .header--logo_container{
   display: inline-block;
@@ -12,6 +15,10 @@
   margin-left: 40px;
   margin-right: 10px;
   vertical-align: top;
+  @include tablet{
+    display: block;
+    margin-left: 5px;
+  };
 }
 .header--logo_link{
   display: block;
@@ -25,12 +32,23 @@
   display: inline-block;
   vertical-align: top;
 }
+.header--working_time{
+  @include laptop{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+  };
+}
 .header--logo{
   width: 100%;
   height: auto;
 }
 .header--phones{
   width: 145px;
+  @include laptop{
+    width: 30%;
+    font-size: 12px;
+  };
 }
 .header--phones_descr{
   width: 145px;
@@ -63,6 +81,9 @@
     color:$link_color2;
     border-bottom: 1px dashed $link_color2;
   }
+  @include laptop{
+    width: 100%;
+  };
 }
 .header--card{
   padding: 6px;
@@ -71,6 +92,9 @@
   //position: absolute;
   //top: 20px;
   //bottom: 0;
+  @include tablet{
+    margin-left: 0;
+  };
 }
 .header--card_img_wrapper{
   width: 25px;
