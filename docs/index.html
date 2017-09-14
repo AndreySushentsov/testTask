@@ -152,8 +152,8 @@
                       <div class="content--filter_item_conteiner">
                         <div class="content--filter_item_title">Размер, мм:</div>
                         <div class="content--filter_item_descr content--filter_item_size">
-                          <input class="content--filter_item_input" type="number" name="minsize"><span class="content--filter_item_span"> </span>
-                          <input class="content--filter_item_input" type="number" name="maxsize">
+                          <input class="content--filter_item_input" type="number" name="minsize" min="0"><span class="content--filter_item_span"> </span>
+                          <input class="content--filter_item_input" type="number" name="maxsize" min="0">
                         </div>
                       </div>
                     </li>
@@ -200,7 +200,10 @@
                 <h2>Товар добавлен корзину</h2>
               </div>
               <div class="content--goods">
-                <div class="content--goods_sort"><span class="content--goods_sort_span">Сортировать по:  </span><a class="content--goods_sort_link active" href="#">названию</a><a class="content--goods_sort_link" href="#">цене</a></div>
+                <div class="content--goods_sort"><span class="content--goods_sort_span">Сортировать по:</span>
+                  <div class="content--goods_sort_link_wrapper"><a class="content--goods_sort_link active" href="#">названию</a></div>
+                  <div class="content--goods_sort_link_wrapper"><a class="content--goods_sort_link" href="#">цене</a></div>
+                </div>
                 <ul class="content--goods_list">
                   <li class="content--goods_item">
                     <div class="content--goods_img_container"><a class="content--goods_img_wrapper" href="#"><img class="content--goods_img" src="./assets/img/img_1.png" alt="img"></a></div>

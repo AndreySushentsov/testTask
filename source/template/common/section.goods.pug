@@ -1,8 +1,10 @@
 .content--goods
   .content--goods_sort
-    span.content--goods_sort_span Сортировать по:  
-    a(href='#').content--goods_sort_link.active названию
-    a(href='#').content--goods_sort_link цене
+    span.content--goods_sort_span Сортировать по:
+    .content--goods_sort_link_wrapper
+      a(href='#').content--goods_sort_link.active названию
+    .content--goods_sort_link_wrapper
+      a(href='#').content--goods_sort_link цене
   ul.content--goods_list
     li.content--goods_item
       .content--goods_img_container
